@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const ground = document.getElementById("ground-brown");
     const grass = document.getElementById("grass-green");
     const boundaries = document.querySelectorAll(".boundary");
-    const description = document.getElementById("description");
 
     let characterLeft = 50;
     let characterBottom = 50;
@@ -82,11 +81,9 @@ document.addEventListener("DOMContentLoaded", function() {
         isAuthenticated = false;
         loginContainer.style.display = "block";
         gameContainer.style.display = "none";
-        description.style.display = "none";
         setTimeout(() => {
             loginContainer.style.display = "block";
             gameContainer.style.display = "none";
-            description.style.display = "block";
         }, 3000);
     }
 
@@ -110,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function() {
             isAuthenticated = true;
             loginContainer.style.display = "none";
             gameContainer.style.display = "block";
-            description.style.display = "none";
         } else {
             alert("Usuário ou senha incorretos. Tente novamente.");
         }

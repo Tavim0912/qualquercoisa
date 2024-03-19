@@ -1,0 +1,141 @@
+body {
+    background-color: #87CEEB;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#login-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#login-container h1 {
+    color: #4caf50;
+}
+
+#login-container div {
+    margin-bottom: 20px;
+}
+
+#login-container label {
+    display: block;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#login-container input[type="text"],
+#login-container input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+}
+
+#login-button {
+    padding: 10px 20px;
+    background-color: #4caf50;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#login-button:hover {
+    background-color: #45a049;
+}
+
+#game-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#game-container h1 {
+    color: #4caf50;
+    font-size: 36px;
+}
+
+#game-container hr {
+    border: none;
+    height: 3px;
+    background-color: #4caf50;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#ground-brown,
+#grass-green {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+#ground-brown {
+    background-color: #8B4513;
+    bottom: 0;
+}
+
+#grass-green {
+    background-color: #458a00;
+    bottom: 50px;
+}
+
+#character {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 90px;
+    height: auto;
+}
+
+#nickname {
+    position: absolute;
+    top: -20px;
+    font-size: 18px;
+    color: black;
+}
+
+.boundary {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: red;
+}
+
+#description {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+body {
+    background-color: #87CEEB; /* Cor de fundo padrão */
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#login-container {
+    background-color: beige; /* Cor de fundo da tela de login */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#description {
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo da descrição com transparência */
+    border: 2px solid black; /* Borda bonitinha preta */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Centralizar a descrição */
+    max-width: 60%; /* Largura máxima da descrição */
+    text-align: justify; /* Justificar o texto */
+}

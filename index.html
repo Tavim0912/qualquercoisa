@@ -5,66 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Flor</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilo para as linhas personalizadas */
-        .line {
-            width: 100%;
-            height: 4px; /* Altura das linhas */
-            background-color: black;
-            margin: 20px 0;
-            /* Adicione estilos adicionais aqui, se desejar */
-        }
-        /* Estilo para a linha superior */
-        #top-line {
-            height: 20px; /* Altura da linha superior */
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: black;
-        }
-        /* Estilo para a linha inferior */
-        #bottom-line {
-            height: 20px; /* Altura da linha inferior */
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: black;
-        }
-        /* Estilo para a linha lateral esquerda */
-        #left-line {
-            width: 20px; /* Largura da linha lateral */
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: black;
-        }
-        /* Estilo para a linha lateral direita */
-        #right-line {
-            width: 20px; /* Largura da linha lateral */
-            height: 100%;
-            position: fixed;
-            top: 0;
-            right: 0;
-            background-color: black;
-        }
-    </style>
 </head>
 <body>
-    <!-- Linha superior -->
-    <div id="top-line"></div>
-    
-    <!-- Linha lateral esquerda -->
-    <div id="left-line"></div>
-    
-    <!-- Linha lateral direita -->
-    <div id="right-line"></div>
-
     <h1 class="H11">Jogo Da Flor</h1>
-    <!-- Linha preta estilizada -->
-    <div class="line"></div>
+    <hr class="Pp">
     <div id="game-container">
         <!-- Camada de Terra (Marrom) -->
         <div id="ground-brown"></div>
@@ -78,7 +22,7 @@
             <img id="character" src="Flor.png" alt="Flor Amarela">
         </div>
     </div>
-    <div id="login-container" style="background-color: beige;">
+    <div id="login-container">
         <h1>Faça seu login antes de poder jogar</h1>
         <div>
             <label for="username">Usuário:</label>
@@ -89,7 +33,7 @@
             <input type="password" id="password" placeholder="Digite sua senha">
         </div>
         <button id="login-button">Entrar</button>
-        <div id="description" style="display: block; margin-top: 20px; font-size: 18px;">
+        <div id="description">
             <p>Seja muito bem-vindo ao fantástico joguinho da flor!</p>
             <p>Neste emocionante e desafiador jogo, você assume o controle de uma bela flor em um vasto mundo aberto, repleto de surpresas e perigos.</p>
             <p>Seu principal objetivo é simples, mas não menos desafiador:</p>
@@ -97,9 +41,6 @@
             <p>Seja ágil, estratégico e corajoso para se defender e escapar dessas ameaças. Boa sorte, e que a beleza e a força da flor estejam ao seu lado nesta jornada!</p>
         </div>
     </div>
-
-    <!-- Linha inferior -->
-    <div id="bottom-line"></div>
 
     <script src="script.js"></script>
 </body>
